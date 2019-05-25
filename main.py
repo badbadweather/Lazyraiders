@@ -36,7 +36,7 @@ raiders = [
     { "name": "開朗小露娜", "realm": realmA },
     { "name": "安琪莉可可", "realm": realmB },
     { "name": "遺忘賽德勒斯", "realm": realmA },
-    {"name": "Latina", "realm": realmA},
+    { "name": "Latina", "realm": realmA },
 ]
 
 print("\n" + "Checking raider.io data..." + "\n")
