@@ -32,10 +32,9 @@ for raider in raiders:
 
     # Compare dates between most recent run and today
     date_leniency = 8      # This is how nice you are
-    date_format = "%Y-%M-%d"
+    date_format = "%Y-%m-%d"
     date_raider = datetime.strptime(dict_string["mythic_plus_recent_runs"][0]["completed_at"][:10], date_format)
     date_today = datetime.strptime(str(date.today()), date_format)
+
     if ((date_today - date_raider).days > date_leniency):
         print(dict_string["name"], "(" + str((date_today - date_raider).days) + " days ago at " + dict_string["mythic_plus_recent_runs"][0]["dungeon"] + ")")
-
-
