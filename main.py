@@ -1,6 +1,6 @@
 import urllib.parse
-from datetime import datetime, date
 from urllib.request import Request, urlopen
+from datetime import datetime, date
 from bs4 import BeautifulSoup
 from prettytable import PrettyTable
 
