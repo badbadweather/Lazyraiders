@@ -48,9 +48,7 @@ for raider in raiders:
     while runs >= 0:
         if (int(dict_string["mythic_plus_recent_runs"][runs]["mythic_level"]) < minimum_mythic_level):
             del dict_string["mythic_plus_recent_runs"][runs]
-            runs -= 1
-        else:
-            runs -= 1
+        runs -= 1
 
     # Safety net against the void
     if (len(dict_string["mythic_plus_recent_runs"]) == 0):
